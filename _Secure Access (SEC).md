@@ -537,7 +537,7 @@ config t
  int gi 4
   ip access-group FWP2 in
   end
-show ip access-list int g4
+show ip access-list 	int g4
 ~~~
 
 
@@ -950,8 +950,8 @@ conf t
 conf t
  ip nat inside source static tcp  10.91.1.4  23  200.0.0.91  4023
  !
- ip nat inside source static tcp  10.91.1.4  __  __.__.__.__     __
- ip nat inside source static tcp  10.91.1.4  __  __.__.__.__     __
+ ip nat inside source static tcp  10.91.100.8 23  200.0.0.67 5023
+ ip nat inside source static tcp  10.91.1.6  22 200.0.0.69 5023
  end
 ~~~
 
